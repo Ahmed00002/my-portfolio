@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-Primary: #ff014f;
+  --color-Navbar: #1a0b2e;
+  --color-Background: #11071f;
+  --color-mint-500: oklch(0.72 0.11 178);
+}
+
+@layer utilities {
+  * {
+    @apply p-0 m-0 box-border;
+  }
+
+  .center {
+    @apply max-w-[1440px] mx-auto px-5 md:px-7 lg:px-8 2xl:px-28;
+  }
+}
