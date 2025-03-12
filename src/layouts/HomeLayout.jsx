@@ -1,9 +1,13 @@
 import { Outlet } from "react-router";
+import ParticlesBg from "../components/particles/ParticlesBg";
 
 const HomeLayout = () => {
   return (
     <>
-      <Outlet />
+      <div className="relative">
+        <Outlet />
+        <ParticlesBg />
+      </div>
     </>
   );
 };

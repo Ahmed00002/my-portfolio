@@ -30,4 +30,17 @@
     background-repeat: no-repeat; /* To prevent the image from repeating */
     /* height: 400px; You can adjust the height based on your need */
   }
+
+  #tsparticles {
+    position: fixed; /* অথবা absolute */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* সব কন্টেন্টের নিচে রাখবে */
+  }
+
+  .hero-ring {
+    @apply absolute inset-0  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full shadow-[0_0_80px_inset] shadow-Navbar -z-10 border-Navbar;
+  }
 }

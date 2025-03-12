@@ -5,7 +5,7 @@ import Navbar from "../../components/shared/Navbar";
 const HomePage = () => {
   return (
     <>
-      <div className="bg-Background">
+      <div>
         <Navbar />
         <Header />
         <Skills />

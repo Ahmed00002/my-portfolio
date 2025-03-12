@@ -5,8 +5,8 @@ import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
-    <nav className="bg-Navbar text-white py-4">
-      <div className="center grid grid-cols-3">
+    <nav className="bg-Navbar text-white py-4 w-full">
+      <div className="center grid grid-cols-1 md:grid-cols-3">
         {/* logo */}
         <div>
           <h1>Numan</h1>
