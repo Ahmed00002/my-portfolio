@@ -4,7 +4,7 @@ import ParticlesBg from "../components/particles/ParticlesBg";
 const HomeLayout = () => {
   return (
     <>
-      <div className="relative">
+      <div className="relative bg">
         <Outlet />
         <ParticlesBg />
       </div>

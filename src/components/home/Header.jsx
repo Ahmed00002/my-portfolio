@@ -18,11 +18,12 @@ const Header = () => {
   return (
     <>
       <header
+        id="#header"
         ref={target}
-        className=" text-white  mb-28 relative z-0 min-h-svh  flex justify-center items-center overflow-hidden "
+        className=" text-white mb-12 md:mb-28  relative z-0 py-18 md:py-36 lg:py-0 lg:min-h-svh  flex justify-center items-center overflow-hidden "
       >
         {/* grain bg */}
-        <div className="absolute inset-0  [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] h-full w-full  ">
+        <div className="absolute inset-0  [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] h-full w-full  py-18 md:py-36 lg:py-0">
           <div
             className="h-full w-full -z-50 opacity-10 absolute top-0 left-0 block "
             style={{ backgroundImage: `url(${grainBg})` }}
@@ -44,10 +45,10 @@ const Header = () => {
           {/* author intro container */}
           <div className="flex flex-col justify-center items-center gap-4 2xl:gap-8 relative z-0">
             <Active />
-            <h1 className="text-4xl md:text-5xl 2xl:text-6xl font-bold">
+            <h1 className="text-3xl md:text-5xl 2xl:text-6xl font-bold">
               I'm Ahmed Numan a
             </h1>
-            <p className="text-4xl md:text-5xl 2xl:text-6xl text-Primary font-bold">
+            <p className="text-3xl md:text-5xl 2xl:text-6xl text-Primary font-bold">
               {" "}
               <Typewriter
                 words={words}
@@ -60,16 +61,16 @@ const Header = () => {
                 delaySpeed={1000}
               />
             </p>
-            <p className="text-md md:text-lg 2xl:text-xl text-gray-300">
+            <p className="text-md md:text-lg 2xl:text-xl text-gray-400 w-11/12 md:w-9/12 text-center">
               and passionate web developer, who loves to build Professional,
               Modern and User Friendly website.
             </p>
 
             <div className="mt-6 flex gap-6">
-              <button className="px-8 py-3 bg-Primary rounded-full uppercase text-lg font-medium cursor-pointer">
+              <button className="px-4 lg:px-8 py-2 md:py-3 bg-Primary rounded-full uppercase text-md md:text-lg font-medium cursor-pointer">
                 Lets Talk
               </button>
-              <button className="px-8 py-3 bg-transparent border-[1px] border-gray-300 rounded-full uppercase text-lg font-medium cursor-pointer">
+              <button className="px-4 lg:px-8 py-2 md:py-3 bg-transparent border-[1px] border-gray-300 rounded-full uppercase text-md md:text-lg font-medium cursor-pointer">
                 Download CV
               </button>
             </div>

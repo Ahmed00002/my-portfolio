@@ -11,6 +11,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiFirebase, SiMongodb, SiExpress } from "react-icons/si";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
+import SectionTitle from "../shared/SectionTitle";
 
 const skills = [
   { name: "React", icon: <FaReact />, level: 90 },
@@ -32,8 +33,8 @@ const tools = [
 const SkillCard = ({ skill }) => {
   return (
     <motion.div
-      whileHover={{ scale: 1.02 }}
-      className="size-40 bg-Background border border-Primary/20 rounded-xl shadow-md hover:shadow-Primary flex flex-col items-center justify-center cursor-pointer transition-all duration-300"
+      // whileHover={{ scale: 1.01 }}
+      className="size-40  shadow-md flex flex-col items-center justify-center cursor-pointer transition-all duration-300"
     >
       <div className="text-6xl text-Primary">{skill.icon}</div>
       <p className="mt-4 text-lg font-semibold">{skill.name}</p>
@@ -43,30 +44,32 @@ const SkillCard = ({ skill }) => {
 
 const Skills = () => {
   return (
-    <div className="text-white center relative z-0">
-      <h2 className="text-md font-bold text-center mb-2 text-Primary">
-        Skills & Tools
-      </h2>
+    <div className="text-white  relative z-0 mb-28">
+      <SectionTitle
+        pin={"Skills & Tools"}
+        title={"My Toolbox"}
+        subtitle={
+          "Explore the technologies and tools I use to craft exceptional digital experiences"
+        }
+      />
 
       {/* Skills Section */}
       <div>
-        <h3 className="text-4xl font-semibold text-center mb-8">
-          Technical Skills & Tools
-        </h3>
-        <Marquee autoFill={true}>
-          <div className="flex py-4 gap-4">
+        <div className="flex gap-4 relative">
+          <Marquee autoFill={true}>
             {skills.map((skill, index) => (
               <SkillCard key={index} skill={skill} />
             ))}
-          </div>
-        </Marquee>
-        <Marquee autoFill={true} direction="right">
-          <div className="flex py-4 gap-4">
+          </Marquee>
+        </div>
+        {/* tools */}
+        <div className="flex gap-4">
+          <Marquee autoFill={true} direction="right">
             {tools.map((skill, index) => (
               <SkillCard key={index} skill={skill} />
             ))}
-          </div>
-        </Marquee>
+          </Marquee>
+        </div>
       </div>
     </div>
   );

@@ -15,6 +15,10 @@
     @apply p-0 m-0 box-border;
   }
 
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
     @apply font-Roboto;
   }
@@ -30,6 +34,10 @@
     background-repeat: no-repeat; /* To prevent the image from repeating */
     /* height: 400px; You can adjust the height based on your need */
   }
+
+  /* .navLinks a.active {
+    @apply bg-pink-600/10 text-[#ff014f];
+  } */
 
   #tsparticles {
     position: fixed; /* অথবা absolute */
