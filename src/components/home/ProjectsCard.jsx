@@ -1,6 +1,3 @@
-import React from "react";
-
-import demoProject from "../../assets/images/dark-saas-landing-page.png";
 import { FaGlobe, FaRegCheckCircle } from "react-icons/fa";
 import grainImg from "../../assets/images/grain.jpg";
 import { SiGithub } from "react-icons/si";

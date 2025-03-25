@@ -1,10 +1,11 @@
 import SectionTitle from "../shared/SectionTitle";
+import ProjectCardDesign from "./ProjectCardDesign";
 import ProjectsCard from "./ProjectsCard";
 
 const Projects = () => {
   const projects = [
     {
-      name: "Edugrant • 2024",
+      name: "Edugrant",
       title: "Scholarship Management and Hunting",
       thumbnail: "https://i.ibb.co.com/hqr2ZQN/laptop-Mockup.jpg",
       subtitle:
@@ -15,25 +16,19 @@ const Projects = () => {
         "User Dashboard",
         "Admin Dashboard",
       ],
-      stacks: [
-        "React",
-        "js",
-        "tailwind",
-        "shadCn ui",
-        "MongoDb",
-        "Express js",
-        "JWT",
-        "Firebase",
-      ],
+      topStacks: ["React", "tailwind", "shadCn UI", "MongoDb"],
+      stacks: ["React", "tailwind", "shadCn ui", "Firebase"],
       gitHub: "https://github.com/Ahmed00002/EduGrant-clent",
       liveLink: "https://edu-grant.netlify.app/",
     },
     {
-      name: "Librario • 2024",
+      name: "Librario",
       title: "Library Management System",
       thumbnail: "https://i.ibb.co.com/Dfdt8s0K/laptop-Mockup.jpg", // Replace with actual image link
       subtitle:
         "Librario is a smart and efficient library management system designed to streamline book borrowing, cataloging, and user management. It helps libraries manage their collections effectively while providing a seamless experience for readers and administrators.",
+      description:
+        "Librario is a library management system that helps users efficiently manage books. Users can add new books, borrow them, and track their return status in real-time. The platform ensures smooth book management for both librarians and readers. It provides an intuitive and user-friendly interface for seamless navigation.",
       features: [
         "Book Borrowing & Return System",
         "Advanced Search & Filtering",
@@ -42,6 +37,7 @@ const Projects = () => {
         "Late Fee Calculation",
         "Real-time Availability Tracking",
       ],
+      topStacks: ["React", "tailwind", "shadCn UI", "MongoDb", "JWT"],
       stacks: [
         "React",
         "JavaScript",
@@ -66,9 +62,9 @@ const Projects = () => {
         }
       />
 
-      <div className="flex flex-col gap-6">
+      <div className="grid grid-cols-2 gap-6">
         {projects.map((project, idx) => {
-          return <ProjectsCard key={idx} project={project} />;
+          return <ProjectCardDesign key={idx} project={project} />;
         })}
       </div>
     </div>

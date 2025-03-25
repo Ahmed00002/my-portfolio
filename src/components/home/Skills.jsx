@@ -34,17 +34,17 @@ const SkillCard = ({ skill }) => {
   return (
     <motion.div
       // whileHover={{ scale: 1.01 }}
-      className="size-40  shadow-md flex flex-col items-center justify-center cursor-pointer transition-all duration-300"
+      className="size-30 md:size-40  shadow-md flex flex-col items-center justify-center cursor-pointer transition-all duration-300"
     >
-      <div className="text-6xl text-Primary">{skill.icon}</div>
-      <p className="mt-4 text-lg font-semibold">{skill.name}</p>
+      <div className="text-5xl md:text-6xl text-Primary">{skill.icon}</div>
+      <p className="mt-4 text-md md:text-lg font-semibold">{skill.name}</p>
     </motion.div>
   );
 };
 
 const Skills = () => {
   return (
-    <div className="text-white  relative z-0 mb-28">
+    <div className="  relative z-0 mb-28">
       <SectionTitle
         pin={"Skills & Tools"}
         title={"My Toolbox"}

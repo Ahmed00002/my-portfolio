@@ -1,11 +1,12 @@
 import React from "react";
+import SectionTitle from "./SectionTitle";
 
 const ContactMe = () => {
   return (
     <>
       <div id="contact" className=" center mt-12 md:mt-28">
-        <div className="bg-gradient-to-r from-indigo-500  to-Primary text-white p-6 rounded-2xl flex flex-col md:flex-row justify-between md:items-center shadow-lg">
-          {/* Text Content */}
+        {/* <div className="bg-gradient-to-r from-indigo-500  to-Primary text-white p-6 rounded-2xl flex flex-col md:flex-row justify-between md:items-center shadow-lg">
+          Text Content
           <div className="flex-1">
             <h2 className="text-xl md:text-2xl font-bold text-black">
               Let's create something amazing together
@@ -16,7 +17,7 @@ const ContactMe = () => {
             </p>
           </div>
 
-          {/* Button */}
+          Button
           <a
             href="https://www.facebook.com/AhmedNuman2004"
             target="_blank"
@@ -24,7 +25,11 @@ const ContactMe = () => {
           >
             Contact Me ↗
           </a>
-        </div>
+        </div> */}
+
+        <h1 className="text-4xl font-extrabold text-center">
+          Contact <span>.</span>
+        </h1>
       </div>
     </>
   );

@@ -5,6 +5,7 @@ import grainBg from "../../assets/images/grain.jpg";
 
 import StarIcon from "../../assets/icons/star.svg";
 import Active from "./Active";
+import sparkle from "../../assets/icons/sparkle.png";
 
 const Header = () => {
   const target = useRef(null);
@@ -20,7 +21,7 @@ const Header = () => {
       <header
         id="#header"
         ref={target}
-        className=" text-white mb-12 md:mb-28  relative z-0 py-18 md:py-36 lg:py-0 lg:min-h-svh  flex justify-center items-center overflow-hidden "
+        className="  mb-12 md:mb-28  relative z-0 py-18 md:py-36 lg:py-0 lg:min-h-svh  flex justify-center items-center overflow-hidden "
       >
         {/* grain bg */}
         <div className="absolute inset-0  [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] h-full w-full  py-18 md:py-36 lg:py-0">
@@ -35,6 +36,29 @@ const Header = () => {
           <div className="size-[1020px] hero-ring"></div>
           <div className="size-[1220px] hero-ring"></div>
           {/* round shapes end */}
+
+          {/* star box */}
+          <div className="size-[620px] star-container -rotate-45 animate-spin [animation-duration:20s]">
+            <img
+              className=" size-14 animate-spin [animation-duration:5s]"
+              src={sparkle}
+              alt=""
+            />
+          </div>
+          <div className="size-[720px] star-container -rotate-55 animate-spin [animation-duration:20s]">
+            <img
+              className=" size-9 animate-spin [animation-duration:5s]"
+              src={sparkle}
+              alt=""
+            />
+          </div>
+          <div className="size-[720px] star-container -rotate-75 animate-spin [animation-duration:20s]">
+            <img
+              className=" size-9 animate-spin [animation-duration:5s]"
+              src={sparkle}
+              alt=""
+            />
+          </div>
         </div>
 
         {/* star icons and dot icon */}
@@ -63,7 +87,7 @@ const Header = () => {
             </p>
             <p className="text-md md:text-lg 2xl:text-xl text-gray-400 w-11/12 md:w-9/12 text-center">
               and passionate web developer, who loves to build Professional,
-              Modern and User Friendly website.
+              Modern and User Friendly web applications.
             </p>
 
             <div className="mt-6 flex gap-6">
