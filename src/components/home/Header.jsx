@@ -20,9 +20,9 @@ const Header = () => {
   return (
     <>
       <header
-        id="#header"
+        id="intro"
         ref={target}
-        className="  mb-12 md:mb-48  relative z-0 py-18 md:py-36 lg:py-0 lg:min-h-svh  flex justify-center items-center overflow-hidden "
+        className="  mb-28 md:mb-48  relative z-0 py-18 md:py-36 lg:py-0 lg:min-h-svh  flex justify-center items-center overflow-hidden "
       >
         {/* grain bg */}
         <div className="absolute inset-0  [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] h-full w-full  py-18 md:py-36 lg:py-0">
@@ -78,12 +78,19 @@ const Header = () => {
 
             <Reveal delay={".4"}>
               <div className="mt-6 items-center justify-center flex gap-6">
-                <button className="px-4 lg:px-8 py-2 md:py-3 bg-Primary rounded-full uppercase text-md md:text-lg font-medium cursor-pointer">
-                  Lets Talk
-                </button>
-                <button className="px-4 lg:px-8 py-2 md:py-3 bg-transparent border-[1px] border-gray-300 rounded-full uppercase text-md md:text-lg font-medium cursor-pointer">
-                  Download CV
-                </button>
+                <a href="#contact">
+                  <button className="px-4 lg:px-8 py-2 md:py-3 bg-Primary rounded-full uppercase text-md md:text-lg font-medium cursor-pointer">
+                    Lets Talk
+                  </button>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1Vogm7D_sjTPJdZ44oLUral6rLqLhTZGR/view?usp=drive_link"
+                >
+                  <button className="px-4 lg:px-8 py-2 md:py-3 bg-transparent border-[1px] border-gray-300 rounded-full uppercase text-md md:text-lg font-medium cursor-pointer">
+                    Download CV
+                  </button>
+                </a>
               </div>
             </Reveal>
           </div>

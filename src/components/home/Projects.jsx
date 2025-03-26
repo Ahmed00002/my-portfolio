@@ -1,3 +1,4 @@
+import Reveal from "../shared/Reveal";
 import SectionTitle from "../shared/SectionTitle";
 import ProjectCardDesign from "./ProjectCardDesign";
 import ProjectsCard from "./ProjectsCard";
@@ -64,7 +65,11 @@ const Projects = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, idx) => {
-          return <ProjectCardDesign key={idx} project={project} />;
+          return (
+            <Reveal delay={`0.4`}>
+              <ProjectCardDesign key={idx} project={project} />
+            </Reveal>
+          );
         })}
       </div>
     </div>

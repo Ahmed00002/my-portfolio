@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <div
       id="about"
-      className="mb-48  center grid grid-cols-1 md:grid-cols-2 gap-18 md:gap-0 font-Roboto"
+      className="mb-28 lg:mb-48  center grid grid-cols-1 md:grid-cols-2 gap-18 md:gap-0 font-Roboto"
     >
       <div className="flex flex-col gap-4 order-2 md:order-0">
         <Reveal delay={"0"}>

@@ -9,12 +9,15 @@ const Navbar = () => {
       <div className="center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {/* logo */}
         <div className="self-center hidden lg:block">
-          <h1>Numan</h1>
+          <h1 className="text-2xl font-extrabold">
+            AN<span className="text-Primary text-4xl">.</span>
+          </h1>
         </div>
         {/* navlinks */}
         <div className="flex justify-between  gap-4 items-center md:justify-center navLinks">
           <a
-            href={"#header"}
+            href={"#intro"}
+            g
             className={
               "md:px-4 py-1 hover:bg-pink-600/10 hover:text-[#ff014f] transition-colors duration-600 font-medium"
             }

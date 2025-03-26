@@ -28,8 +28,27 @@ const Footer = () => {
           >
             LinkedIn ↗
           </a>
+          <a
+            href="https://github.com/Ahmed00002/"
+            target="_blank"
+            className="hover:text-white transition"
+          >
+            GitHub ↗
+          </a>
         </div>
       </div>
+
+      {/* credit */}
+      <p className=" mt-2 mx-auto text-center">
+        Developed with ❤️ by{" "}
+        <a
+          href="https://github.com/Ahmed00002/"
+          target="_blank"
+          className="text-Primary p-0"
+        >
+          @AhmedNuman
+        </a>
+      </p>
     </footer>
   );
 };

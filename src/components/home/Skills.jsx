@@ -12,6 +12,7 @@ import { SiFirebase, SiMongodb, SiExpress } from "react-icons/si";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 import SectionTitle from "../shared/SectionTitle";
+import Reveal from "../shared/Reveal";
 
 const skills = [
   { name: "React", icon: <FaReact />, level: 90 },
@@ -44,7 +45,7 @@ const SkillCard = ({ skill }) => {
 
 const Skills = () => {
   return (
-    <div className="  relative z-0 mb-48">
+    <div className="  relative z-0 mb-28 lg:mb-48">
       <SectionTitle
         pin={"Skills & Tools"}
         title={"My Toolbox"}
@@ -56,19 +57,23 @@ const Skills = () => {
       {/* Skills Section */}
       <div>
         <div className="flex gap-4 relative">
-          <Marquee autoFill={true}>
-            {skills.map((skill, index) => (
-              <SkillCard key={index} skill={skill} />
-            ))}
-          </Marquee>
+          <Reveal delay={"0.4"}>
+            <Marquee autoFill={true}>
+              {skills.map((skill, index) => (
+                <SkillCard key={index} skill={skill} />
+              ))}
+            </Marquee>
+          </Reveal>
         </div>
         {/* tools */}
         <div className="flex gap-4">
-          <Marquee autoFill={true} direction="right">
-            {tools.map((skill, index) => (
-              <SkillCard key={index} skill={skill} />
-            ))}
-          </Marquee>
+          <Reveal delay={"0.5"}>
+            <Marquee autoFill={true} direction="right">
+              {tools.map((skill, index) => (
+                <SkillCard key={index} skill={skill} />
+              ))}
+            </Marquee>
+          </Reveal>
         </div>
       </div>
     </div>
