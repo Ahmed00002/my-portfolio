@@ -4,7 +4,7 @@ import SectionTitle from "./SectionTitle";
 const ContactMe = () => {
   return (
     <>
-      <div id="contact" className=" center mt-12 md:mt-28">
+      <div id="contact" className=" center mt-12 md:my-48">
         {/* <div className="bg-gradient-to-r from-indigo-500  to-Primary text-white p-6 rounded-2xl flex flex-col md:flex-row justify-between md:items-center shadow-lg">
           Text Content
           <div className="flex-1">
@@ -27,12 +27,12 @@ const ContactMe = () => {
           </a>
         </div> */}
 
-        <h1 className="text-4xl font-extrabold text-center">
-          Contact <span>.</span>
+        <h1 className="text-6xl font-extrabold text-center">
+          Contact <span className="text-Primary">.</span>
         </h1>
       </div>
     </>
   );
 };
-
+0;
 export default ContactMe;

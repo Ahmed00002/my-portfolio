@@ -6,12 +6,12 @@ import Marquee from "react-fast-marquee";
 const ProjectCardDesign = ({ project }) => {
   const {
     name,
-    title,
+    // title,
     thumbnail,
     subtitle,
-    features,
-    description,
-    stacks,
+    // features,
+    // description,
+    // stacks,
     gitHub,
     liveLink,
     topStacks,

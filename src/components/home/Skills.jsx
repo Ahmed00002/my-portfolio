@@ -44,7 +44,7 @@ const SkillCard = ({ skill }) => {
 
 const Skills = () => {
   return (
-    <div className="  relative z-0 mb-28">
+    <div className="  relative z-0 mb-48">
       <SectionTitle
         pin={"Skills & Tools"}
         title={"My Toolbox"}

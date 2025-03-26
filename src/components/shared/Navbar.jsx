@@ -5,7 +5,7 @@ import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white/20 backdrop-blur-3xl  lg:bg-Navbar text-white py-2 lg:py-4 w-11/12 mx-auto mt-4 lg:mt-0 rounded-full lg:rounded-none  px-4 md:px-2 lg:px-0  lg:w-full sticky top-4 lg:top-0 left-0 z-50">
+    <nav className="bg-white/20 backdrop-blur-3xl  lg:bg-transparent lg:backdrop-blur-2xl text-white py-2 lg:py-4 w-11/12 mx-auto mt-4 lg:mt-0 rounded-full lg:rounded-none  px-4 md:px-2 lg:px-0  lg:w-full sticky top-4 lg:top-0 left-0 z-50">
       <div className="center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {/* logo */}
         <div className="self-center hidden lg:block">
@@ -52,7 +52,7 @@ const Navbar = () => {
           <a
             href="https://www.facebook.com/AhmedNuman2004"
             target="_blank"
-            className="p-3 rounded-full bg-[#1e1e1e] cursor-pointer"
+            className="p-3 rounded-full bg-[#1e1e1e] cursor-pointer hover:bg-Primary transition-colors duration-300"
           >
             <FaFacebookF />
           </a>
@@ -60,7 +60,7 @@ const Navbar = () => {
           <a
             href="https://www.instagram.com/ahmednuman70/"
             target="_blank"
-            className="p-3 rounded-full bg-[#1e1e1e] cursor-pointer"
+            className="p-3 rounded-full bg-[#1e1e1e] cursor-pointer hover:bg-Primary transition-colors duration-300"
           >
             <FaInstagram />
           </a>
@@ -68,7 +68,7 @@ const Navbar = () => {
           <a
             href="https://www.linkedin.com/in/layekahmednuman/"
             target="_blank"
-            className="p-3 rounded-full bg-[#1e1e1e] cursor-pointer"
+            className="p-3 rounded-full bg-[#1e1e1e] cursor-pointer hover:bg-Primary transition-colors duration-300"
           >
             <FaLinkedinIn />
           </a>
