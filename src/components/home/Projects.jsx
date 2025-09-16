@@ -6,6 +6,25 @@ import ProjectsCard from "./ProjectsCard";
 const Projects = () => {
   const projects = [
     {
+      name: "QuickDoc AI",
+      title: "AI Document Analyzer",
+      thumbnail: "https://i.postimg.cc/rsFTngWf/laptop-Mockup.png",
+      subtitle:
+        "QuickDoc AI is an intelligent document analysis platform. Users can upload documents, and the system will automatically extract, analyze, and summarize key information with the power of AI.",
+      features: [
+        "Smart Document Upload & Analysis",
+        "AI-Powered Summarization",
+        "Advanced Search & Filtering",
+        "User Dashboard with History Tracking",
+        "Secure Authentication & Profile Management",
+        "Multi-Format Support (PDF, DOCX, TXT, OCR)",
+      ],
+      topStacks: ["React", "tailwind", "shadCn UI", "MongoDb"],
+      stacks: ["React", "tailwind", "shadCn ui", "Firebase"],
+      gitHub: "https://github.com/Ahmed00002/QuickDocAi",
+      liveLink: "https://quickdocai.vercel.app",
+    },
+    {
       name: "Edugrant",
       title: "Scholarship Management and Hunting",
       thumbnail: "https://i.ibb.co.com/hqr2ZQN/laptop-Mockup.jpg",
@@ -66,8 +85,8 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, idx) => {
           return (
-            <Reveal delay={`0.4`}>
-              <ProjectCardDesign key={idx} project={project} />
+            <Reveal key={idx} delay={`0.4`}>
+              <ProjectCardDesign project={project} />
             </Reveal>
           );
         })}

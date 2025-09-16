@@ -38,7 +38,7 @@ const ProjectCardDesign = ({ project }) => {
         {/* project description */}
         <div className="flex items-center justify-center mt-6 gap-2">
           <h className="text-3xl font-bold ">{name}</h>
-          <div class="flex-grow h-[1px] bg-gray-600 "></div>
+          <div className="flex-grow h-[1px] bg-gray-600 "></div>
           <a href={gitHub} target="_blank">
             <FaGithub
               className="cursor-pointer hover:text-Primary transition-colors duration-200"
